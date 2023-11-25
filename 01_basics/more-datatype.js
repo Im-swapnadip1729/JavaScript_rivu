@@ -35,3 +35,25 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack(primitive) , heap(non-premitive)
+let myName = "rivu"
+
+let anotherName = myName
+anotherName = "Swapnadip"
+
+console.log(myName);
+console.log(anotherName);
+
+let useOne = {
+    email: "rivu@hamil.com",
+    upi: "7699808192@llb"
+}
+
+let userTwo = useOne
+userTwo.email = "swapnadip@google.com"
+
+console.log(useOne.email);// rafarance changed
+console.log(userTwo.email);
