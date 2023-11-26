@@ -26,4 +26,42 @@ if (true) {
 
 // console.log("OUTER: ",a);
 
+function one(){
+    const username = "hitesh"
 
+    function two(){
+        const website = "youtube"
+        console.log(username);
+    }
+    // console.log(website);
+
+     two()
+
+}
+
+// one()
+
+if (true) {
+    const username = "hitesh"
+    if (username === "hitesh") {
+        const website = " youtube"
+        // console.log(username + website);
+    }
+    // console.log(website);//can't be accesed
+}
+
+// console.log(username);//can't be accesed
+
+
+// ++++++++++++++++++ interesting ++++++++++++++++++
+function addOne(num) {
+    return num+1
+}
+
+addOne(5)
+
+const addTwo = function(num){//expression
+    return num + 2
+}
+
+addTwo(6)
