@@ -18,10 +18,14 @@
     
     let intervalId;
     document.getElementById('start').addEventListener('click', function(){
-        intervalId = setInterval(sayDate,1000,"hitesh");
+        if(!intervalId){
+            intervalId = setInterval(sayDate,1000,"hitesh");
+        }
+        
     })
     document.querySelector('#stop').addEventListener('click', function(){
         clearInterval(intervalId);
+        intervalId = null; // best code parctice
     })
 
 </script>
