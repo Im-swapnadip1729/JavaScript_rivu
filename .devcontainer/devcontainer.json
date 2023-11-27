@@ -23,6 +23,7 @@
 				"vscode-icons-team.vscode-icons",
 				"wayou.vscode-todo-highlight",
 				"ritwickdey.LiveServer"
+				
 			],
 			"settings": {
 				"editor.wordWrap": "on"
