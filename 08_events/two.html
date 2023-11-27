@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events set time out</title>
+</head>
+<body>
+    <h1>Chai or Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayRivu = function(){
+        console.log("rivu");
+    }
+    const changeH1 = function(){
+        document.querySelector('h1').innerHTML = "best Js series";
+    }
+
+    const changeMe = setTimeout(changeH1,2000);// give referance
+    document.getElementById('stop').addEventListener('click', function(){
+        clearTimeout(changeMe);
+        console.log("Stoped");
+    })
+</script>
+</html>
