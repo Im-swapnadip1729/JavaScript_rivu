@@ -1,5 +1,5 @@
 # javascript and classes
-
+ proto type based language but bu doing syntactic sugar on js. 
 ## OOP
 
 ## Object
